@@ -4,8 +4,8 @@ import PageDefault from '../../../PageDefault';
 
 
 
-
 function CadastroVideo () {
+    
     return (
         <PageDefault>
             <h1>Cadastro de video</h1>
