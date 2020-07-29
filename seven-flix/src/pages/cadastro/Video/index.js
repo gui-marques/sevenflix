@@ -10,7 +10,7 @@ function CadastroVideo () {
         <PageDefault>
             <h1>Cadastro de video</h1>
             <Link to="/cadastro/categoria">
-                <h2>cadastrar categoria</h2>
+                <h2>Cadastrar categoria</h2>
 
             </Link>
         </PageDefault>
