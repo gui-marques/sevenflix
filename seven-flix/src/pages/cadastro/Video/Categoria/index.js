@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import PageDefoult from '../../../../PageDefault';
 import FormField from '../../../../Componentes/FormField'
+import Button from '../../../../Componentes/Button'
 
 function CadastroCategoria() {
   const valoresInicial = {
@@ -46,8 +47,8 @@ function CadastroCategoria() {
       
   <FormField
         label="Nome da Categoria"
-        type={"text"}
-        name={"nome"}
+        type="text"
+        name="nome"
         value={values.nome}
         onChange={ handleChenge } />
 
@@ -66,8 +67,7 @@ function CadastroCategoria() {
   */}
  <FormField
         label="Descrição: "
-        type="text"
-        
+        type="textarea"        
         name="descricao"
         value={values.descricao}
         onChange={ handleChenge } />
@@ -93,9 +93,9 @@ function CadastroCategoria() {
         value={values.cor}
         onChange={ handleChenge } />
 
-          <button>
+          <Button>
             Cadastrar
-          </button>
+          </Button>
         </form>
         <div>
          <ul>
