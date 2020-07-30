@@ -9,7 +9,7 @@ const Input = styled.input`
 function FormField ({label,type,name,value, onChange}) {
   const fieldId = `id_${name}`
   const isTextarea = type === 'textarea'
-  const tag = type ==='textarea' ? 'textarea' : 'input';
+  const tag = isTextarea ? 'textarea' : 'input';
 
  return(
      <div>
