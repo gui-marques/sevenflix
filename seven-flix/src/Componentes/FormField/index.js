@@ -10,6 +10,7 @@ function FormField ({label,type,name,value, onChange}) {
   const fieldId = `id_${name}`
   const isTextarea = type === 'textarea'
   const tag = isTextarea ? 'textarea' : 'input';
+  <div></div>
 
  return(
      <div>
