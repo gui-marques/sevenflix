@@ -17,6 +17,15 @@
           "text": "Cursos de Back End na Alura",
           "url": "https://www.alura.com.br/cursos-online-programacao"
         }
+      },
+      {
+        "id": 3,
+        "titulo": "Back End",
+        "cor": "#00C86F",
+        "link_extra": {
+          "text": "Cursos de Back End na Alura",
+          "url": "https://www.alura.com.br/cursos-online-programacao"
+        }
       }
     ]
   }
