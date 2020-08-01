@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import PageDefoult from '../../../../PageDefault';
 import FormField from '../../../../Componentes/FormField'
@@ -30,6 +30,19 @@ function CadastroCategoria() {
       );
   }
 
+    useEffect(() => {
+    
+      const URL_TOP = 'http://localhost:8080/categorias';
+      fetch(URL_TOP)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
+    }, [
+
+    ]);
     return (
       <PageDefoult>
         <h1>Cadastro de Categoria: {values.nome}</h1> 
@@ -53,18 +66,7 @@ function CadastroCategoria() {
         onChange={ handleChenge } />
 
 
-  {/*<div> 
-      <label>
-            Descrição:
-            <textarea
-              type="text"
-              name="descricao"
-              value= {values.descricao}
-              onChange={ handleChenge }
-            />
-          </label>
-          </div>
-  */}
+
  <FormField
         label="Descrição: "
         type="textarea"        
@@ -72,21 +74,7 @@ function CadastroCategoria() {
         value={values.descricao}
         onChange={ handleChenge } />
 
-
-
-  {/* <div>
-          <label>
-            Cor:
-            <input
-              type="color"
-              name="cor"
-              value= {values.cor}
-              onChange={ handleChenge }
-            />
-          </label>
-           </div>
-           */}
-           <FormField
+ <FormField
          label="Cor"
         type="color"
         name="cor"
@@ -97,17 +85,22 @@ function CadastroCategoria() {
             Cadastrar
           </Button>
         </form>
-        <div>
+      
+        { categorias.length === 0 && (<div>
+          Loading...
+        </div>
+        )}
+
          <ul>
-            {categorias.map((categoria,indice) =>{
+            {categorias.map((categoria) =>{
               return(
-                <li key={`&{categoria}${indice}`}>
-                  {categoria.nome}
+                <li key={`${categoria.titulo}`}>
+                  {categoria.titulo}
                   </li>
               )
             })}
           </ul>
-          </div>
+     
         <Link to="/">
           Ir para home
         </Link>
