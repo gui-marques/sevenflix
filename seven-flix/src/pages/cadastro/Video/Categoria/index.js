@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import PageDefoult from '../../../../PageDefault';
-import FormField from '../../../../Componentes/FormField'
-import Button from '../../../../Componentes/Button'
+import FormField from '../../../../Componentes/FormField';
+import Button from '../../../../Componentes/Button';
+import useForm from '../../../../hooks/useForm';
+
 
 function CadastroCategoria() {
   const valoresInicial = {
@@ -11,40 +13,13 @@ function CadastroCategoria() {
     cor: '',
   }
 
+  const { handleChenge, values, clearForm } = useForm(valoresInicial);  
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresInicial);
 
 
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    })
-  }
 
-
-  function handleChenge(infosDoEvento) {
-    const { name, value } = infosDoEvento.target;
-    setValue(
-      name, value    
-      );
-  }
-
-    useEffect(() => {
-    
-      const URL_TOP = window.location.hostname.includes('localhost')
-      ? 'http://localhost:3000/categorias'
-      : 'https://seven-flix.herokuapp.com/categorias';
-      fetch(URL_TOP)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
-    }, [
-
-    ]);
+   
+      
     return (
       <PageDefoult>
         <h1>Cadastro de Categoria: {values.nome}</h1> 
@@ -55,7 +30,7 @@ function CadastroCategoria() {
           ...categorias,
           values]); 
           
-          setValues(valoresInicial)
+         clearForm()
       }}>
 
 
@@ -95,14 +70,17 @@ function CadastroCategoria() {
 
          <ul>
             {categorias.map((categoria) =>{
+               
               return(
                 <li key={`${categoria.titulo}`}>
                   {categoria.titulo}
+                 
                   </li>
+                  
               )
             })}
           </ul>
-     
+          
         <Link to="/">
           Ir para home
         </Link>

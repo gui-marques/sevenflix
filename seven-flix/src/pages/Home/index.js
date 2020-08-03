@@ -1,11 +1,22 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Menu from '../../Componentes/Menu';
 import dadosIniciais from '../../Data/dados_iniciais.json';
 import BannerMain from '../../Componentes/BannerMain';
 import Carousel from '../../Componentes/Carousel';
 import Footer from '../../Componentes/Footer';
+import categoriasRepository from '../../repositories/categorias.js';
+
 
 function Home() {
+
+
+useEffect(() => {
+  categoriasRepository.getAllWithVideos()
+  .then((categoriasComVideos) => {
+    console.log('as', categoriasComVideos);
+  });
+});
+
   return (
     <div style={{ background: "#141414" }}>
       <Menu />

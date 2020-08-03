@@ -9,6 +9,7 @@ const FormFieldWrapper = styled.div`
   }
   input[type="color"] {
     padding-left: 56px;
+  
   }
 `;
 
@@ -18,7 +19,7 @@ Label.Text = styled.span`
   color: #E5E5E5;
   height: 57px;
   position: absolute; 
-  top: 0;
+  top: 2px;
   left: 16px;
   
   display: flex;
@@ -46,17 +47,17 @@ const Input = styled.input`
   border-bottom: 4px solid #53585D;
   
   padding: 16px 16px;
-  margin-bottom: 45px;
+  margin-bottom: 12px;
   
   resize: none;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: border-color .3s;
   
   &:focus {
     border-bottom-color: var(--primary);
   }
   &:focus:not([type='color']) + ${Label.Text} {
-    transform: scale(.6) translateY(-10px);
+    transform: scale(.7) translateY(-16px);
   }
   ${({ value }) => {
     const hasValue = value.length > 0;
