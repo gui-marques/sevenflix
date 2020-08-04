@@ -15,9 +15,6 @@ function CadastroCategoria() {
 
   const { handleChenge, values, clearForm } = useForm(valoresInicial);  
   const [categorias, setCategorias] = useState([]);
-
-
-
    
       
     return (
