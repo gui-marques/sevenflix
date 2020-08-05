@@ -1,7 +1,7 @@
 {
   "categorias": [
     {
-      "titulo": "Calistenia",
+      "titulo": "Front-End",
       "descricao": "Calistenia: o Básico",
       "cor": "#f78072",
       "id": 1
@@ -157,6 +157,30 @@
       "categoriaId": 4,
       "titulo": "Meditação para relaxar",
       "url": "https://www.youtube.com/watch?v=5qHXtfSDoJM"
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 23
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 24
+    },
+    {
+      "titulo": "AUDIOLIVRO: QUEM PENSA ENRIQUECE - Napoleon Hill | Audiobook Completo",
+      "url": "https://www.youtube.com/watch?v=kC4-UNp6TqI&t=4021s",
+      "categoriaId": 1,
+      "id": 25
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 26
     }
   ]
 }

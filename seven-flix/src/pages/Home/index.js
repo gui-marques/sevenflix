@@ -4,8 +4,6 @@ import PageDefault from '../../PageDefault';
 import BannerMain from '../../Componentes/BannerMain';
 import Carousel from '../../Componentes/Carousel';
 
-
-
 function Home() {
 
 const [dadosInicial, setDadosIniciais] = useState([]);
@@ -13,10 +11,11 @@ const [dadosInicial, setDadosIniciais] = useState([]);
 useEffect(() => {
   categoriasRepository.getAllWithVideos()
   .then((categoriasComVideos) => {
+    console.log(categoriasComVideos);
     setDadosIniciais(categoriasComVideos);
   })
   .catch((err) => {
-    console.log('aaa',err.message);
+    console.log(err.message);
   })
 }, []);
 
