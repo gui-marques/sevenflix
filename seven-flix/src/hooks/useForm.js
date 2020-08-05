@@ -1,33 +1,32 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
+function useForm(valoresIniciais) {
+  const [values, setValues] = useState(valoresIniciais);
 
-function useForm(valoresInicial) {
-    const [values, setValues] = useState(valoresInicial);
-  
-  
-    function setValue(chave, valor) {
-      setValues({
-        ...values,
-        [chave]: valor,
-      });
-    }
-  
-  
-    function handleChenge(infosDoEvento) {
-      const { name, value } = infosDoEvento.target;
-      setValue(
-        name, value    
-        );
-        
-    }
-    function clearForm() {
-        setValues(valoresInicial)
-      }
-     return {
-      values,
-        handleChenge,
-        clearForm
-      }  
+  function setValue(chave, valor) {
+    // chave: nome, descricao, bla, bli
+    setValues({
+      ...values,
+      [chave]: valor, // nome: 'valor'
+    });
   }
-  
+
+  function handleChange(infosDoEvento) {
+    setValue(
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
+    );
+  }
+
+  function clearForm() {
+    setValues(valoresIniciais);
+  }
+
+  return {
+    values,
+    handleChange,
+    clearForm,
+  };
+}
+
 export default useForm;

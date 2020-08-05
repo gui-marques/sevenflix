@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "titulo": "Hiit",
+      "titulo": "Back-end",
       "descricao": "Treino de hiit para pernas e glúteos",
       "cor": "#f78b03"
     },
@@ -181,6 +181,72 @@
       "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
       "categoriaId": 1,
       "id": 26
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 27
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 28
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 29
+    },
+    {
+      "titulo": "QUEM PENSA ENRIQUECE | Os 13 Passos Para o Sucesso | Napoleon Hill | RESUMO COMPLETO",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 30
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 2,
+      "id": 31
+    },
+    {
+      "titulo": "COMO SAIR DAS DÍVIDAS (MESMO GANHANDO POUCO)",
+      "url": "https://www.youtube.com/watch?v=r-pc6T1l2Lk",
+      "categoriaId": 3,
+      "id": 32
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 33
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=ShrNIBXef_s",
+      "categoriaId": 1,
+      "id": 34
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "categoriaId": 1,
+      "id": 35
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "categoriaId": 2,
+      "id": 36
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "categoriaId": 1,
+      "id": 37
     }
   ]
 }
